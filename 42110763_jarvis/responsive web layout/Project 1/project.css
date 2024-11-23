@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container1{
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows:120px auto 80px ;
+    grid-template-columns: 120px auto ;
+}
+
+
+.box1{
+grid-column-start: 1;
+grid-column-end: 4;
+background-color: black;
+color: aliceblue;
+text-align: center;
+font-size: 20px;
+padding: 20px;
+}
+
+.box2{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3;
+background-color: grey;
+color: aliceblue;
+list-style-type: none;
+
+}
+
+
+.box3{
+    background-color: aliceblue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.box4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+
+}
+.box2 a{
+    list-style-type:none
+    text-decoration: dashed;
+    color: aliceblue;
+    font-size :20px;
+    
+    
+    
+}
+
+a:hover{
+    background-color:darkgrey
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-container1{
+        width: 100%;
+        height: 100vh;
+        
+        display: grid;
+        grid-template-rows:auto auto auto auto ;
+        grid-template-columns: auto;
+    }
+    box1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        
+        }
+        
+        .box2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: grey;
+        color: aliceblue;
+        list-style-type: none;
+        text-align: center;
+        
+        }
+        
+        
+        .box3{
+            background-color: aliceblue;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            
+        
+        }
+        
+        .box4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            
+        
+        }
+        .box2 a{
+            list-style-type:none
+            text-decoration: dashed;
+            color: aliceblue;
+            text-align: center;
+            
+            
+            
+            
+        }
+        
+        a:hover{
+            background-color:darkgrey
+        }  
+     
+}
